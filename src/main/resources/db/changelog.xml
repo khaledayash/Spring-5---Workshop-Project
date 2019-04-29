@@ -1,0 +1,6 @@
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" objectQuotingStrategy="QUOTE_ALL_OBJECTS"
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+  <include file="./changes/001_setup_order_table.xml" relativeToChangelogFile="true"/>
+</databaseChangeLog>

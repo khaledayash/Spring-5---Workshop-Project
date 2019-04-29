@@ -1,0 +1,11 @@
+== The NewsUser API
+This is an example Documentation!
+
+.request
+include::{snippets}/findone/http-request.adoc[]
+
+.response
+include::{snippets}/findone/http-response.adoc[]
+
+.description
+include::{snippets}/findone/response-fields.adoc[]

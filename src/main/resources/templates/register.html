@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Registeration</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container"><h1>Register</h1>
+  <form method="POST" th:action="@{/user/register}" th:object="${newsUser}">
+    <div th:replace="fragments/input :: input('text','Vorname', 'firstname')"/>
+    <div th:replace="fragments/input :: input('text','Nachname', 'lastname')"/>
+    <div th:replace="fragments/input :: input('date','Geburtstag', 'birthday')"/>
+    <div th:replace="fragments/input :: input('text','Benutzername', 'username')"/>
+    <div th:replace="fragments/input :: input('password','Passwort', 'password')"/>
+    <br/>
+    <div class="form-row">
+      <button class="btn btn-primary" type="submit">Register</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

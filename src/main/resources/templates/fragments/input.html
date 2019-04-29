@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div th:fragment="input(type, label, field)" class="form-row">
+  <label th:text="${label}">Firstname: </label>
+  <input
+    th:attr="type=${type}"
+    th:value="*{__${field}__}"
+    th:field="*{__${field}__}"
+    th:class="${'form-control' + (#fields.hasErrors(field) ?' is-invalid':'')}"/>
+  <div class="invalid-feedback"
+       th:if="${#fields.hasErrors(field)}"
+       th:errors="*{__${field}__}">
+
+  </div>
+</div>
+</body>
+</html>
