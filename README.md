@@ -1,5 +1,19 @@
 # Spring-5---Workshop-Project
-How it works?
+It's a simple Spring webmvc, which has been taken at the attended Spring Workshop
+-----
+the content of the Workshop;
+Basic Configuration
+Advanced Configuration
+AOPSpring
+MVCSpring
+SecuritySpring
+Caching
+Actuator
+Spring Data
+JPA
+REST-ful Services
+----
+How project works?
 1- run the server(run as webmvcapplication).
 2-it will start on port 8080
 3- go to http://localhost:8080/user/register 
